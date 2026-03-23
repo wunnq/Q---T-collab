@@ -6,65 +6,54 @@
     <style>
         body {
             font-family: Arial;
-            margin: 40px;
         }
-        .container {
+        .box {
             width: 420px;
             border: 1px solid black;
-            padding: 20px;
+            padding: 10px;
         }
-        h2 {
-            text-align: center;
+        h3 {
+            margin: 10px 0 5px;
         }
-        input, textarea {
-            width: 100%;
-            margin: 5px 0 10px 0;
-            padding: 5px;
+        input[type="text"], input[type="email"] {
+            width: 200px;
         }
         textarea {
+            width: 300px;
             height: 100px;
         }
-        .checkbox-group {
-            margin: 10px 0;
-        }
-        button {
-            padding: 6px 15px;
+        .btn {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h2>Đóng góp ý kiến cho thư viện của nhà trường</h2>
+<div class="box">
+    <b>Đóng góp ý kiến cho thư viện của nhà trường</b>
 
     <form>
-        <!-- Phần 1 -->
         <h3>1. Thông tin về người góp ý</h3>
 
-        <label>Họ và tên:</label>
-        <input type="text" name="hoten">
+        Họ và tên:
+        <input type="text" name="hoten"><br><br>
 
-        <label>Địa chỉ email:</label>
-        <input type="email" name="email">
+        Địa chỉ email:
+        <input type="email" name="email"><br>
 
-        <!-- Phần 2 -->
         <h3>2. Đóng góp ý kiến</h3>
 
-        <label>Ý kiến đóng góp:</label>
-        <textarea name="ykien"></textarea>
+        Ý kiến đóng góp:<br>
+        <textarea name="ykien"></textarea><br><br>
 
-        <!-- Checkbox -->
-        <label>Thể loại cần bổ sung thêm sách:</label>
-        <div class="checkbox-group">
-            <input type="checkbox" name="chkTruyenNgan"> Truyện ngắn <br>
-            <input type="checkbox" name="chkKiNang"> Kĩ năng sống <br>
-            <input type="checkbox" name="chkCNTT"> Công nghệ thông tin <br>
-            <input type="checkbox" name="chkTruyenTranh"> Truyện tranh <br>
-            <input type="checkbox" name="chkLichSu"> Lịch sử <br>
-        </div>
+        Thể loại cần bổ sung thêm sách:<br>
+        <input type="checkbox" name="chkTruyenNgan"> Truyện ngắn <br>
+        <input type="checkbox" name="chkKiNang"> Kĩ năng sống <br>
+        <input type="checkbox" name="chkCNTT"> Công nghệ thông tin <br>
+        <input type="checkbox" name="chkTruyenTranh"> Truyện tranh <br>
+        <input type="checkbox" name="chkLichSu"> Lịch sử <br>
 
-        <!-- Nút gửi -->
-        <input type="submit" value="Góp ý">
+        <input class="btn" type="submit" value="Góp ý">
     </form>
 </div>
 
